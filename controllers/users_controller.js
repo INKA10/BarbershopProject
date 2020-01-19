@@ -7,6 +7,14 @@ exports.registrationPage = function(req,res) {
   });
 };
 
+
+//! Can't find a way to add this feature
+exports.forgotPassword = function(req, res) {
+  res.render('users/password-reset', {
+    layout: 'forgot-password'
+  });
+}
+
 exports.signOutUser = function(req,res) {
   req.logout();
   res.redirect("/");
