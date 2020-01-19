@@ -3,12 +3,14 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-body {
+ body {
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   background-color: white;
+  margin: 0;
+  padding: 0;
 }
 html {
   width: 100%;
@@ -107,7 +109,7 @@ a:focus {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 20px 0;
+    padding: 10px 0;
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
@@ -128,7 +130,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -274,7 +276,7 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  padding: 50px 0;
+  padding: 0px 0;
 }
 footer p {
   margin: 0;
@@ -303,11 +305,11 @@ body {
 }
 
 .navbar {
-  background: #03a9f4;
+  background: #722036;
 }
 
 .navbar-brand {
-  padding: 0;
+  padding: 10px;
   padding-top: 10px;
   width: 200px;
 }
@@ -316,6 +318,12 @@ p {
     margin: 0;
     font-size: 1.2em;
     line-height: 1.2;
+}
+
+#map {
+  height: 550px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -401,9 +409,9 @@ p {
   border: 0px;
   color: #fff;
   text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-size: 14px;
+  background-color: crimson;
+  padding: 15px 0px;
+  font-size: 18px;
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
 }
 
@@ -411,7 +419,7 @@ p {
   /* border: 1px solid #2f5bb7; */
   border: 0px;
   text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
+  background-color: darkred
   /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
 }
 
@@ -427,6 +435,32 @@ p {
 
 .login-help{
   font-size: 12px;
+}
+
+#registerButton{
+	-webkit-animation-name: start; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: start;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes start {
+    0%   {background-color: #722036;}
+    25%  {background-color: darkred;}
+    50%  {background-color: crimson;}
+    100% {background-color: #722036;}
+  }
+  
+
+/* Standard syntax */
+@keyframes start {
+    0%   {background-color: #722036;}
+    25%  {background-color: darkred;}
+    50%  {background-color: crimson;}
+    100% {background-color: #722036;}
 }
 
 /* Login CSS End */
