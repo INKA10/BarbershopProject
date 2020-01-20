@@ -2,12 +2,15 @@ var express = require('express');
 var router  = express.Router();
 
 var appointments_controller = require('../controllers/appointments_controller');
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 router.get('/', appointments_controller.index);
 
+// router.post('/new', isAuthenticated, appointments_controller);
+
 module.exports = router;
 
-// var db = require("../models");
+
 
 // module.exports = app => {
 
