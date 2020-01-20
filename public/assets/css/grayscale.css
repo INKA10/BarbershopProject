@@ -271,10 +271,10 @@ a:focus {
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid yellow;
+  border: 1px solid lightgray;
   outline: none;
   color: black;
-  background-color: yellow;
+  background-color: lightgray;
 }
 ul.banner-social-buttons {
   margin-top: 0;

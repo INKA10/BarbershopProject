@@ -100,8 +100,8 @@ form, #map-places-container {
   height: 70px;
   font-size: 24px;
   background: white;
-  color: #03a9f4;
-  border: solid 1px #03a9f4;
+  color: darkred;
+  border: solid 1px black;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -118,13 +118,13 @@ form, #map-places-container {
   height: 70px;
   font-size: 24px;
   background: white;
-  color: #03a9f4;
-  border: solid 1px #03a9f4;
+  color: darkred;
+  border: solid 1px black;
 }
 
 .btn-circle:hover {
-	background: #03a9f4;
-	color: white;
+	background: lightgray;
+	color: black;
 }
 
 .all-trips-container {
