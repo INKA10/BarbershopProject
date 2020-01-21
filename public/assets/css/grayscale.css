@@ -72,7 +72,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: darkred;
-  cursor: default;
+  cursor: pointer;
 }
 .light {
   font-weight: 400;
