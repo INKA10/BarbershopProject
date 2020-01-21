@@ -2,8 +2,15 @@ var express = require('express');
 var router  = express.Router();
 
 var appointments_controller = require('../controllers/appointments_controller');
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
-router.get('/', appointments_controller.index);
+router.get('/', isAuthenticated, appointments_controller.index);
+
+// makeReservation route loads makerReservation.handlebars
+router.get("/appointments", function(req, res) {
+    res.render("appointments");
+    // res.sendFile(path.join(__dirname, "../public/makeReservation.html"));    // This is for non-handlebars version
+  });
 
 module.exports = router;
 
