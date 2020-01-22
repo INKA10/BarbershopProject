@@ -1,4 +1,7 @@
 
+ {{> nav }}
+ {{> login-modal }}
+
 <!-- NAVIGATION CONTAINER -->
 
 <div class="navigationWhiteBackPlate"></div>
@@ -14,8 +17,37 @@
         <br>
         <button class="indexPageButton" onClick="window.open('services', '_self')">Services</button>
         <br>
-        <button class="indexPageButton" onClick="window.open('contact', '_self')">Contact</button>
+        <button class="indexPageButton" onClick="window.open('contact', '_self')">About Us</button>
         <br>
     </div>
 
+</div>
+
+<!-- MENU -->
+
+<!-- The Overlay -->
+<div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>      <!-- &times; is the icon for X -->
+    
+    <!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="login">Log In</a> 
+        <a href="signup">Register</a> 
+    </div>
+
+</div>
+
+<!-- Top Bar and Branding Text -->
+<div class="topBar">
+    <span class="branding">Branding</span>
+</div>
+
+<!-- Hamburger Menu -->
+<div class="topnav">
+
+    <!-- Hamburger icon -->
+    <a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>      <!-- &#9776; is the hamburger icon -->
+    
 </div>

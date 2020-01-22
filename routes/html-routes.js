@@ -42,4 +42,16 @@ module.exports = function(app) {
     // res.sendFile(path.join(__dirname, "../public/contact.html"));    // This is for non-handlebars version
   });
 
+    // contact route loads registration.handlebars
+    app.get("/signup", function(req, res) {
+      res.render("signup");
+      // res.sendFile(path.join(__dirname, "../public/contact.html"));    // This is for non-handlebars version
+    });
+
+ // contact route loads login.handlebars
+ app.get("/login", function(req, res) {
+  res.render("login");
+  // res.sendFile(path.join(__dirname, "../public/contact.html"));    // This is for non-handlebars version
+});
+
 };
