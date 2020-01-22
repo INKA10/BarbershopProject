@@ -1,94 +1,295 @@
-    <link rel="stylesheet" href="/assets/css/pricing.css">
-    {{> nav }}
-    {{> login-modal }}
-    
-    <!-- Plans -->
-    <section id="plans">
-        <div class="container">
-            <div class="row">
+{{> nav }}
 
-                <!-- item -->
-                <div class="col-md-4 text-center">
-                    <div class="panel panel-danger panel-pricing">
-                        <div class="panel-heading">
-                            <img src="/assets/img/HaircutPricing/haircut.webp"
-                        alt="Beard Trim and Haircut combo" style="width:100%">
-                           
-                          
-                        </div>
-                       
-                        <div class="panel-body text-center">
-                            <p><strong>Haircut - $30</strong></p>
-                        </div>
-                        <ul class="list-group text-center">
-                             <li class="list-group-item"></i>  
-                             <p>Traditional mens cut, line up, hot towel treatment, hot lather straight razor neck
-                            trim, scalp massage & style. </p></li>
-                            {{!-- <li class="list-group-item"><i class="fa fa-check"></i> Haircut</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> Barber: John</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li> --}}
-                        </ul>
+<!-- CSS here -->
+<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/themify-icons.css">
+<link rel="stylesheet" href="/assets/css/nice-select.css">
+<link rel="stylesheet" href="/assets/css/flaticon.css">
+<link rel="stylesheet" href="/assets/css/gijgo.css">
+<link rel="stylesheet" href="/assets/css/animate.css">
+<link rel="stylesheet" href="/assets/css/slicknav.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 
-                        <div class="panel-footer">
-                            <a class="btn btn-lg btn-block btn-danger" href="#">BOOK NOW!</a>
-                        </div>
-                    </div>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+<style>
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+        width: 50%;
+        width: 10%;
+        margin: auto;
+    }
+</style>
+
+
+<!-- service_area_start -->
+<div class="service_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title3 padding_plus text-center mb-90">
+                    <h3>services</h3>
                 </div>
-                <!-- /item -->
-
-                <!-- item -->
-                <div class="col-md-4 text-center">
-                    <div class="panel panel-warning panel-pricing">
-                        <div class="panel-heading">
-                                <img src="/assets/img/HaircutPricing/shaveandhaircutcombo.webp"
-                        alt="Beard Trim and Haircut combo" style="width:100%">
-                            
-                        </div>
-                        <div class="panel-body text-center">
-                         <p><strong>Shave & Haircut Combo - $50</strong></p>
-                        </div>
-                        <ul class="list-group text-center">
-                             <li class="list-group-item"></i>  
-			 <p>All the services of a haircut and straight razor shave combined. </p></li>
-                            {{!-- <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li> --}}
-                        </ul>
-                        <div class="panel-footer">
-                            <a class="btn btn-lg btn-block btn-warning" href="#">BOOK NOW!</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /item -->
-
-                <!-- item -->
-                <div class="col-md-4 text-center">
-                    <div class="panel panel-success panel-pricing">
-                        <div class="panel-heading">
-                           <img src="/assets/img/HaircutPricing/straightrazor.webp"  style="width:100%">
-                        </div>
-                       <div class="panel-body text-center">
-                         <p><strong>Straight Razor Shave - $30</strong></p>
-                        </div>
-                        <ul class="list-group text-center">
-                             <li class="list-group-item"></i>  
-			 <p>Hot towel treatment, pre-shave creams, hot lather, oils, and after shave.</p></li>
-                            {{!-- <li class="list-group-item"><i class="fa fa-check"></i> Personal use</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> Unlimited projects</li>
-                            <li class="list-group-item"><i class="fa fa-check"></i> 27/7 support</li> --}}
-                        </ul>
-                        <div class="panel-footer">
-                            <a class="btn btn-lg btn-block btn-success" href="#">BOOK NOW!</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- /item -->
-
             </div>
         </div>
-    </section>
-    <!-- /Plans -->
-    
-    {{!-- Footer --}}
+        <div class="white_bg_pos">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/1.png" alt="">
+                            </div>
+                            <span>Men’s Facial</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/2.png" alt="">
+                            </div>
+                            <span>Clean Cut</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/3.png" alt="">
+                            </div>
+                            <span>Close Shave</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/4.png" alt="">
+                            </div>
+                            <span>Razor Cut</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/5.png" alt="">
+                            </div>
+                            <span>Face Massage</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/6.png" alt="">
+                            </div>
+                            <span>Classic haircut</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/7.png" alt="">
+                            </div>
+                            <span>Haircut and shampoo</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/8.png" alt="">
+                            </div>
+                            <span>Hair treatment</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/9.png" alt="">
+                            </div>
+                            <span>Beard trimming</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                    <div class="single_service d-flex justify-content-between align-items-center">
+                        <div class="service_inner d-flex align-items-center">
+                            <div class="thumb">
+                                <img src="/assets/img/service/10.png" alt="">
+                            </div>
+                            <span>Beard and moustache</span>
+                        </div>
+                        <p>………………………..$15</p>
+                    </div>
+                </div>
+                <div class="col-xl-12">
+                    <div class="book_btn text-center">
+                        <a class="boxed-btn3 popup-with-form" href="#test-form">Make an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- service_area_end -->
 
-    {{> footer }}
+
+<!-- gallery_area_start -->
+<div class="gallery_area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title2 text-center mb-90">
+                    <i class="flaticon-scissors"></i>
+                    <h3>Our Gallery</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div id="carouselExample1" class="carousel slide z-depth-1-half" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item single_gallery active">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img class="d-block w-100" src="/assets/img/gallery/1.png">
+                                    <div class="image_hover">
+                                        <a class="popup-image" href="/assets/img/gallery/1.png">
+                                            <i class="ti-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item single_gallery">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img class="d-block w-100" src="/assets/img/gallery/2.png">
+                                    <div class="image_hover">
+                                        <a class="popup-image" href="/assets/img/gallery/2.png">
+                                            <i class="ti-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item single_gallery">
+                            <div class="single_gallery">
+                                <div class="thumb">
+                                    <img class="d-block w-100" src="/assets/img/gallery/3.png">
+                                    <div class="image_hover">
+                                        <a class="popup-image" href="/assets/img/gallery/3.png">
+                                            <i class="ti-plus"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- gallery_area_end -->
+<!-- cutter_muster_start -->
+<div class="cutter_muster">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section_title2 text-center mb-90">
+                    <i class="flaticon-scissors"></i>
+                    <h3>Our Cutter Masters</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6 col-lg-3">
+                <div class="single_master">
+                    <div class="thumb">
+                        <img src="/assets/img/team/1.png" alt="">
+                        <div class="social_link">
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="master_name text-center">
+                        <h3>Macau Wilium</h3>
+                        <p>Massage Master</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-3">
+                <div class="single_master">
+                    <div class="thumb">
+                        <img src="/assets/img/team/2.png" alt="">
+                        <div class="social_link">
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="master_name text-center">
+                        <h3>Dan Jacky</h3>
+                        <p>Mens Cut</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-3">
+                <div class="single_master">
+                    <div class="thumb">
+                        <img src="/assets/img/team/3.png" alt="">
+                        <div class="social_link">
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="master_name text-center">
+                        <h3>Luka Luka</h3>
+                        <p>Mens Cut</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-3">
+                <div class="single_master">
+                    <div class="thumb">
+                        <img src="/assets/img/team/4.png" alt="">
+                        <div class="social_link">
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="master_name text-center">
+                        <h3>Rona Dana</h3>
+                        <p>Ladies Cut</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cutter_muster_end -->
