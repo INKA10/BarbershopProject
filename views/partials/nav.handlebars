@@ -24,12 +24,10 @@
                 <li>
                     <a class="page-scroll" href="#">About Us</a>
                 </li>
-                <li>
-                    <a class="page-scroll" href="users/signup">Register</a>
-                </li>
+               
                 {{#if isAuthenticated}}
                     <li>
-                        <a class="page-scroll" href="/trips/">My Appointments</a>
+                        <a class="page-scroll" href="/trips/">Appointments</a>
                     </li>
                     <li>
                         <a href="/users/sign-out" class="page-scroll" data-toggle="modal">Logout</a>
@@ -38,6 +36,11 @@
                     <li>
                         <a class="page-scroll" data-toggle="modal" data-target="#login-modal">Login</a>
                     </li>
+
+                    <li>
+                    <a class="page-scroll" href="users/signup">Register</a>
+                </li>
+
                 {{/if}}
             </ul>
         </div>
