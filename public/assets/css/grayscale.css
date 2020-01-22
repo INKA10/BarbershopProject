@@ -295,13 +295,16 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  border-style: solid;
-  border-color: black;
-}
-footer p {
-  color: black;
+  border-style: none;
   background-color: darkgray;
+  color: black;
+  text-align: center;
+  position: relative;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
 }
+
 
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
