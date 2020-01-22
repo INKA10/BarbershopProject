@@ -269,9 +269,10 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid black;
+  border: 1px solid white;
   color: darkred;
-  background-color: transparent;
+  background-color: black;
+  border-radius: 50px;
 }
 .btn-default:hover,
 .btn-default:focus {
