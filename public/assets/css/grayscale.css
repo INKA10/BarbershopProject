@@ -296,6 +296,8 @@ ul.banner-social-buttons {
 }
 footer {
   padding: 0px 0;
+  border-style: solid;
+  border-color: black;
 }
 footer p {
   margin: 0;
