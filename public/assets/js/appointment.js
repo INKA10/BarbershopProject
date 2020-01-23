@@ -31,7 +31,8 @@ $(document).ready(function () {
   
       // User input validation
       // Will not submit the post if we are missing a Customer Name, Mobile Number, Email, Barber Selection, Date Selection, Time Selection
-      if (!titleInput.val().trim() || !mobileInput.val().trim() || !emailInput.val().trim() || !postCategorySelect.val().trim() || !bodyInput.val().trim() || !postTime.val().trim()) {
+      // if (!titleInput.val().trim() || !mobileInput.val().trim() || !emailInput.val().trim() || !postCategorySelect.val().trim() || !bodyInput.val().trim() || !postTime.val().trim()) {
+        if (!titleInput.val().trim()) {
         console.log("Please fill out all fields before submitting!");
   
         // Show the modal with alerting the user to fill out all fields
@@ -117,7 +118,7 @@ $(document).ready(function () {
     // Submits a new post and brings user to the reservationSuccessModal function upon completion
     function submitPost(Post) {
       // console.log(Post)
-      $.post("/api/reservations/", Post, function () {
+      $.post("/appointments/new", Post, function () {
         console.log("New reservation submitted!");
         reservationSuccessModal();
       });
@@ -125,7 +126,7 @@ $(document).ready(function () {
   
     // Gets post data for a post if we're editing
     function getPostData(id) {
-      $.get("/api/reservations/" + id, function (data) {
+      $.get("/appointments" + id, function (data) {
         if (data) {
           // If this post exists, prefill our reservation forms with its data
           titleInput.val(data.customer_name); // Customer Name
@@ -146,10 +147,10 @@ $(document).ready(function () {
     function updatePost(post) {
       $.ajax({
         method: "PUT",
-        url: "/api/reservations/",
+        url: "/appointments",
         data: post
       }).then(function () {
-        window.location.href = '/barberPortal';
+        window.location.href = '/appointments';
       });
       console.log(post);
   
@@ -163,7 +164,7 @@ $(document).ready(function () {
       $("#modalSuccessReservationBarber").html(postCategorySelect.val());
   
       $(".successModalCloseButton").click(function () {
-        window.location.href = "/makeReservation";
+        window.location.href = "/appointments";
       });
     }
   });

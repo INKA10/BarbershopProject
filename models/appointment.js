@@ -2,40 +2,35 @@
 module.exports = (sequelize,DataTypes) => {
 
   var Appointment = sequelize.define('Appointment', {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true,
-      allowNull: false
-    },
-    appointmentFrom: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    appointmentTo: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    appointmentDate: {
+    reservation_date: {
       type: DataTypes.STRING,
-      allowNull: false
-    },
-    wait_time: {
-      type: DataTypes.STRING,
-      defaultValue: null
-    },
-    rating: {
-      type: DataTypes.STRING,
-      defaultValue: null
-    },
-    feedback: {
-      type: DataTypes.TEXT,
-      defaultValue: null
-    },
-    serviceId:{
-      type: DataTypes.INTEGER,
-    }
+      defaultValue: "",
 
+      // allowNull: false,
+    },
+    reservation_time: {
+      type: DataTypes.STRING,
+      // allowNull: false,
+    },
+    barber_name: {
+      type: DataTypes.STRING,
+      defaultValue: ""
+    },
+    customer_name: {
+      type: DataTypes.STRING,
+      defaultValue: "",
+    },
+    customer_email: {
+      type: DataTypes.STRING,
+      validate: {
+      }
+    },
+    customer_phone: {
+      type: DataTypes.STRING,
+      validate: {
+        len: [0, 15]
+      }
+    }
   });
 ////////////////////////////////////////////////////////////////////////////////////////////// 
 // Temporarily commented out  the associate with the Employee model to get the app to run.
@@ -43,19 +38,19 @@ module.exports = (sequelize,DataTypes) => {
   
 
   //Associate with
-  // Appointment.associate = models => {
+  Appointment.associate = models => {
 
-  //   Appointment.belongsTo(models.Employee,{
-  //     EmployeeId: {
-  //       allowNull: false
-  //     }
-  //   });
-  //   Appointment.belongsTo(models.User,{
-  //     UserID: {
-  //       allowNull: false
-  //     }
-  //   });
-  // };
+    // Appointment.belongsTo(models.Employee,{
+    //   EmployeeId: {
+    //     allowNull: false
+    //   }
+    // });
+    Appointment.belongsTo(models.User,{
+      UserID: {
+        allowNull: false
+      }
+    });
+  };
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////
