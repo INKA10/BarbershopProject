@@ -527,18 +527,20 @@ p {
   transform: translate(-40px, 0px);
 }
 
+#reservationForm {
+  color: #333;
+}
+
 .pageHeading {
   width: 100%;
-
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 35px;
   text-align: center;
-  
   position: relative;
   left: -1px;         /*  offset a little here because the font is italic and there is an optical illusion
                           happening with the text seeming to appear slightly to the right */
-  top: 0px;
+  top: 100px;
 }
 
 .mainContentContainer {
