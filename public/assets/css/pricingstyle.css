@@ -519,8 +519,7 @@
     color: black;
     font-size: 18px;
     font-weight: 900;
-    font-family: "Playfair Display", serif;
-    
+    font-family: "Playfair Display", serif;    
   }
   
   /* line 73, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
@@ -529,6 +528,10 @@
     font-size: 18px;
     font-family: "Playfair Display", serif;
     color: darkred;
+  }
+
+  .pricingtext{
+    padding-top: 30px;
   }
 
   
