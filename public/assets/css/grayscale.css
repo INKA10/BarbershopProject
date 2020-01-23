@@ -7,23 +7,71 @@
   width: 100%;
   height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  background-color: white;
   margin: 0;
   padding: 0;
   background-image: url("carbon_fiber.png");
 }
 
 .brand-heading {
-  font-family: 'Alex Brush', cursive;
-  font-size: 130px;
+  font-family: 'Alex Brush';
+  opacity: 1;
+  font-size: 140px;
   color: darkred;
+  -webkit-text-fill-color: darkred;
+  -webkit-text-stroke: 1px white;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+#header-text {
+  margin: 0 0 35px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 1;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px red;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+#header-text2 {
+  margin: 0 0 35px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 1;
+  color: white;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px red;
+  color: white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+#loginNow {
+  text-decoration: underline;
 }
 
 .contactL {
   color: black;
-  /* padding-top: 60px; */
   margin-top: 55px;
+  background-color: blueviolet;
 }
 
 #feel {
@@ -145,13 +193,14 @@ a:focus {
 }
 .intro {
   display: table;
-  width: 100%;
-  /* margin-left: 25px; */
+  width: 80%;
+  margin: 0px 140px;
   height: auto;
-  padding: 100px 0;
+  padding: 100px 0px;
   text-align: center;
   color: white;
-  background: url(https://images.unsplash.com/photo-1503951914875-452162b0f3f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80) no-repeat bottom center scroll;
+  background: url(https://c.pxhere.com/photos/23/bd/adults_barber_barbershop_business_city_cut_facial_expression_group-1568815.jpg!d) no-repeat bottom center scroll;
+  opacity: .95;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
