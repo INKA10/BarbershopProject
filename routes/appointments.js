@@ -1,13 +1,24 @@
 var express = require('express');
 var router  = express.Router();
+// var path = require("path");
+// var db = require("../models");
 
 var appointments_controller = require('../controllers/appointments_controller');
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
-router.get('/', appointments_controller.index);
+router.get('/', isAuthenticated, appointments_controller.index);
+
+// appointments route loads appointments.handlebars
+// router.get("/appointments", function(req, res) {
+//     res.render("appointments");
+//     // res.sendFile(path.join(__dirname, "../public/makeReservation.html"));    // This is for non-handlebars version
+//   });
+
+router.post('/new', appointments_controller.makeAppointment);
 
 module.exports = router;
 
-// var db = require("../models");
+// 
 
 // module.exports = app => {
 
