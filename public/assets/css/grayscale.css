@@ -11,6 +11,7 @@
   background-color: white;
   margin: 0;
   padding: 0;
+  background-image: url("carbon_fiber.png");
 }
 
 .brand-heading {
@@ -145,6 +146,7 @@ a:focus {
 .intro {
   display: table;
   width: 100%;
+  /* margin-left: 25px; */
   height: auto;
   padding: 100px 0;
   text-align: center;
