@@ -324,19 +324,20 @@
   
   /* line 36, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
   .service_area .section_title2 i {
-    color: #fff;
+    color: black;
   }
   
   /* line 39, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
   .service_area .section_title2 h3 {
-    color: #fff;
+    color: black;
   }
   
   /* line 43, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
   .service_area .single_service {
     padding: 20px 0px 20px 0px;
     margin: 0 44px;
-    border-bottom: 1px solid #ECEAE5;
+    border-bottom: 1px solid;
+    color: black;
   }
   
 
@@ -355,7 +356,7 @@
   
   /* line 66, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
   .service_area .single_service .service_inner span {
-    color: black;
+  
     font-size: 18px;
     font-weight: 900;
     font-family: "Playfair Display", serif;
@@ -496,6 +497,7 @@
     padding: 20px 0px 20px 0px;
     margin: 0 44px;
     border-bottom: 1px solid #ECEAE5;
+    
   }
   
 
@@ -518,6 +520,7 @@
     font-size: 18px;
     font-weight: 900;
     font-family: "Playfair Display", serif;
+    
   }
   
   /* line 73, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
