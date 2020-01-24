@@ -1,5 +1,5 @@
 <!-- Navigation -->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background-color: darkgrey;">
+<nav class="navbar navbar-custom navbar-fixed-top navbar-dark bg-dark" role="navigation" style="background-color: gray;">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
@@ -22,9 +22,10 @@
                     <a class="page-scroll" href="/pricing/">Services</a>
                 </li>
               
+               
                 {{#if isAuthenticated}}
                     <li>
-                        <a class="page-scroll" href="/appointments/"> My Appointments</a>
+                        <a class="page-scroll" href="/appointments/">Appointments</a>
                     </li>
                     <li>
                         <a href="/users/sign-out" class="page-scroll" data-toggle="modal">Logout</a>
@@ -34,10 +35,15 @@
                         <a class="page-scroll" data-toggle="modal" data-target="#login-modal">Login</a>
                     </li>
 
-                      <li>
+                    <li>
                     <a class="page-scroll" href="users/signup">Register</a>
                 </li>
+
                 {{/if}}
+
+         
+
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
