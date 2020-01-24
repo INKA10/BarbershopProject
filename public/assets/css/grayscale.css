@@ -254,6 +254,12 @@ a:focus {
     font-size: 26px;
   }
 }
+
+#registration-container {
+  background-color: #F7F7F7;
+  border-radius: 20px;
+}
+
 .btn-circle {
   width: 70px;
   height: 70px;
