@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "Wander89!",
-=======
-    "password": null,
->>>>>>> aadef4a33d6f0838027c302e878409d2f12e5fea
     "database": "barbershop_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
