@@ -11,7 +11,7 @@
     font-size: 42px;
     font-weight: 400;
     line-height: 52px;
-    color: #4A3600;
+    color: #fff;
     position: relative;
     padding-bottom: 30px;
     margin-top: 10px;
@@ -109,7 +109,7 @@
   .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
-    color: #4A3600;
+    color: #fff;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
@@ -185,7 +185,7 @@
   .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
-    color: #4A3600;
+    color: #fff;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
@@ -244,7 +244,7 @@
   .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
-    color: #4A3600;
+    color: #fff;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
@@ -272,7 +272,7 @@
   .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
-    color: #4A3600;
+    color: #fff;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
@@ -537,7 +537,7 @@
   
 /* line 29, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_btn.scss */
 .boxed-btn3 {
-    background: #4A3600;
+    background: #fff;
     color: #fff;
     display: inline-block;
     padding: 12px 27px;
@@ -545,7 +545,7 @@
     font-size: 16px;
     font-weight: 400;
     border: 0;
-    border: 1px solid #4A3600;
+    border: 1px solid #fff;
     text-align: center;
     color: #fff !important;
     text-transform: capitalize;
@@ -559,8 +559,8 @@
   /* line 45, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_btn.scss */
   .boxed-btn3:hover {
     background: #fff;
-    color: #4A3600 !important;
-    border: 1px solid #4A3600;
+    color: #fff !important;
+    border: 1px solid #fff;
   }
   
   /* line 50, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_btn.scss */
@@ -597,4 +597,65 @@
   /* line 73, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_btn.scss */
   .boxed-btn2:focus {
     outline: none;
+  }
+  
+  
+  .foo {
+    outline: 1px solid orange;
+}
+
+@media (max-width: 767px) {
+    /* line 1, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
+    .service_area {
+      padding-top: 60px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 1, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
+    .service_area {
+      padding-top: 60px;
+    }
+  }
+
+  
+@media (max-width: 767px) {
+    /* line 43, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
+    .service_area .single_service {
+      display: block !important;
+      margin: 0 30px;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1500px) {
+    /* line 43, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
+    .service_area .single_service {
+      display: flex !important;
+      margin: 0 30px;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    /* line 90, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
+    .service_area .book_btn {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* line 90, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
+    .service_area .book_btn {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* line 1, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_gallery.scss */
+    .gallery_area {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
