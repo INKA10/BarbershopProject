@@ -100,6 +100,11 @@ html {
   /* background-image: url("carbon_fiber.png"); */
 }
 
+#barbers {
+  color: white;
+  font-family: 'Alex Brush, cursive';
+}
+
 ul {
   padding: 0;
 }
