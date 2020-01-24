@@ -491,7 +491,7 @@ h3 {
 
 /* line 2, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_section_title.scss */
 .section_title span {
-  color: #BC9321;
+  color: pink;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 15px;
@@ -503,7 +503,7 @@ h3 {
   font-size: 42px;
   font-weight: 400;
   line-height: 52px;
-  color: #4A3600;
+  color: white;
 }
 
 @media (max-width: 767px) {
@@ -552,7 +552,7 @@ h3 {
 /* line 40, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_section_title.scss */
 .section_title2 i {
   font-size: 45px;
-  color: #BC9321;
+  color: white;
   display: block;
 }
 
@@ -561,7 +561,7 @@ h3 {
   font-size: 42px;
   font-weight: 400;
   line-height: 52px;
-  color: #4A3600;
+  color: white;
   position: relative;
   padding-bottom: 30px;
   margin-top: 10px;
@@ -573,7 +573,8 @@ h3 {
   content: "";
   width: 80px;
   height: 1px;
-  background: #BC9321;
+  color: white;
+  background: pink;
   bottom: 0;
   left: 50%;
   margin-left: -40px;
