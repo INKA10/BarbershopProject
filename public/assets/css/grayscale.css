@@ -215,7 +215,15 @@ a:focus {
     background: black;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+
 }
+
+#registration-container {
+  background-color: #F7F7F7;
+  border-radius: 25px;
+}
+
+
 .intro {
   display: table;
   width: 80%;
