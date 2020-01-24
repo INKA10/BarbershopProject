@@ -1,5 +1,5 @@
 body {
-	color: black;
+	color: white;
 }
 
 #registration-container {
@@ -10,4 +10,7 @@ body {
   #registration-container {
 		margin-top: 10%;
 	}
+}
+footer {
+	text-align: center;
 }
