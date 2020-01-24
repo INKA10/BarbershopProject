@@ -4,11 +4,7 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
  body {
-  width: 100%;
-  height: 100%;
   font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-image: url("carbon_fiber.png");
   background-repeat: repeat-y;
 }
@@ -375,21 +371,21 @@ ul.banner-social-buttons {
 
 
 footer {
-  padding: 0px;
+  text-align: center;
 }
 footer p {
   margin: 0px;
   color: white;
-  background-color: gray;
+  background-color: grey;
   border-style: solid;
   border-color: black;
   border-radius: 15px;
 }
 
-#footerNote {
+/* #footerNote {
   padding: 20px;
   margin-left: 15px;
-}
+} */
 
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
