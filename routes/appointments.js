@@ -16,6 +16,36 @@ router.get('/', isAuthenticated, appointments_controller.index);
 
 router.post('/new', appointments_controller.makeAppointment);
 
+router.get("/api/appointments/", appointments_controller.getAppointments);
+
+router.get("/api/appointments/barber/:barberId", function (req, res) {
+    var cool = new Date();
+    var Sequelize = require("sequelize")
+    const Op = Sequelize.Op
+
+
+
+    // console.log(cool)
+    var nowDate = moment(cool).format("YYYY/MM/DD");
+    var timeNow = moment(cool).format("LT");
+    db.Reservation.findAll({
+        order: [
+          ["reservation_date"],
+          ["reservation_time"]
+        ],
+
+        where: {
+          barber_name: req.params.barberId,
+          reservation_date: {
+            [Op.gte]: nowDate
+          }
+        }
+      })
+      .then(function (dbReservation) {
+        res.json(dbReservation);
+      });
+  });
+
 module.exports = router;
 
 // 
