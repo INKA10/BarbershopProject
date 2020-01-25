@@ -1,7 +1,13 @@
 var express = require('express');
+const momentTimeZone = require('moment-timezone');
+const moment = require('moment');
+const Appointment = require('../models/appointment');
 var router  = express.Router();
 // var path = require("path");
 // var db = require("../models");
+const getTimeZones = function() {
+  return momentTimeZone.tz.names();
+};
 
 var appointments_controller = require('../controllers/appointments_controller');
 var isAuthenticated = require("../config/middleware/isAuthenticated");
@@ -14,11 +20,12 @@ router.get('/', isAuthenticated, appointments_controller.index);
 //     // res.sendFile(path.join(__dirname, "../public/makeReservation.html"));    // This is for non-handlebars version
 //   });
 
-router.post('/new', appointments_controller.makeAppointment);
+router.post('/new', isAuthenticated, appointments_controller.makeAppointment);
+// router.post('/new', isAuthenticated, appointments_controller.sendText);
 
-router.get("/api/appointments/", appointments_controller.getAppointments);
+router.get('/api/appointments/', isAuthenticated, appointments_controller.getAppointments);
 
-router.get("/api/appointments/barber/:barberId", function (req, res) {
+router.get('/api/appointments/barber/:barberId', function (req, res, next) {
     var cool = new Date();
     var Sequelize = require("sequelize")
     const Op = Sequelize.Op
@@ -44,7 +51,9 @@ router.get("/api/appointments/barber/:barberId", function (req, res) {
       .then(function (dbReservation) {
         res.json(dbReservation);
       });
-  });
+});
+
+
 
 module.exports = router;
 
