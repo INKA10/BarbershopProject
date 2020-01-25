@@ -129,7 +129,10 @@ html {
 
 #barbers {
   color: white;
-  font-family: 'Alex Brush, cursive';
+  font-family: 'Alex Brush', cursive;
+  font-size: 120px;
+  font-weight: bolder;
+  padding-top: 25px;
 }
 
 ul {
@@ -422,7 +425,7 @@ footer p {
 
 #footerNote {
   padding: 20px;
-  margin-left: 15px;
+  text-align: center;
 }
 
 body {
