@@ -3,6 +3,7 @@ var router  = express.Router();
 var moment = require("moment")
 var db = require('../models');
 
+
 exports.index = function(req, res) {
     res.render('appointments/appointments');
 };
