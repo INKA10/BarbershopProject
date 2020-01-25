@@ -8,8 +8,8 @@ var env       = process.env.NODE_ENV || 'development';
 var config    = require(__dirname + '/../config/config.json')[env];
 var db        = {};
 
-if (process.env.JAWSDB_URL || config.use_env_variable) {
-  var sequelize = new Sequelize(process.env.JAWSDB_URL || process.env[config.use_env_variable], {
+if (process.env.JAWSDB_URL) {
+  var sequelize = new Sequelize(process.env.JAWSDB_URL, {
     host: "q68u8b2buodpme2n.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     port: 3306,
     user: "g6vtr9qhmrowf87f",
