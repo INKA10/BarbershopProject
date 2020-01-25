@@ -46,7 +46,7 @@ module.exports = (sequelize,DataTypes) => {
     //   }
     // });
     Appointment.belongsTo(models.User,{
-      UserID: {
+      username: {
         allowNull: false
       }
     });

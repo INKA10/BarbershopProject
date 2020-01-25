@@ -36,3 +36,83 @@ exports.makeAppointment = function(req, res) {
     // });
   
   };
+
+  exports.getAppointments = function(req, res) {
+      var cool = new Date();
+      var nowDate = moment(cool).format("YYYY/MM/DD");
+      var timeNow = moment(cool).format("LT");
+      
+      db.Appointment.findAll({
+        where: {
+          username: req.user.id
+        }
+      }).then(function(dbAppointment) {
+        console.log(dbAppointment);
+        res.render('appointment/appointment', {
+          layout: 'main-appointments',
+          Appointment: dbAppointment
+        });
+      });
+
+
+    // var cool = new Date();
+    // var Sequelize = require("sequelize")
+    // const Op = Sequelize.Op
+
+
+
+    // console.log(cool)
+    // var nowDate = moment(cool).format("YYYY/MM/DD");
+    // var timeNow = moment(cool).format("LT");
+
+
+
+    // console.log(nowDate + " " + timeNow)
+    // var momentDateTime = (nowDate + " " + timeNow)
+    // db.Appointment.findAll({
+    //     order: [
+    //       ["reservation_date"],
+    //       ["reservation_time"]
+    //     ],
+
+    //     where: {
+    //       reservation_date: {
+    //         [Op.gte]: nowDate
+    //       }
+
+    //     }
+
+    //   })
+    //   .then(function (dbAppointment) {
+    //     console.log(dbAppointment);
+    //     res.render(dbAppointment);
+    //   });
+};
+
+exports.getBarberAppointments = function(req, res) {
+  var cool = new Date();
+    var Sequelize = require("sequelize")
+    const Op = Sequelize.Op
+
+
+
+    // console.log(cool)
+    var nowDate = moment(cool).format("YYYY/MM/DD");
+    var timeNow = moment(cool).format("LT");
+    db.Appointment.findAll({
+        order: [
+          ["reservation_date"],
+          ["reservation_time"]
+        ],
+
+        where: {
+          barber_name: req.params.barberId,
+          reservation_date: {
+            [Op.gte]: nowDate
+          }
+        }
+      })
+      .then(function (dbAppointment) {
+        res.json(dbAppointment);
+      });
+};

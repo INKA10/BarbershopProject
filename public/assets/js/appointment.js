@@ -167,13 +167,8 @@ $(document).ready(function () {
         window.location.href = "/appointments";
       });
     }
-  });
 
-
-
-  // THIS WILL BE THE SECOND DISPLAY ONCE A USER HAS BOOKED AN APPOINTMENT
-
-  $(document).ready(function () {
+    // THIS WILL BE THE SECOND DISPLAY ONCE A USER HAS BOOKED AN APPOINTMENT
 
     // reservationContainer holds all of our posts
     var reservationContainer = $(".reservation-container");
@@ -186,13 +181,13 @@ $(document).ready(function () {
     var posts;
   
     // This function grabs posts from the database and updates the view
-    function getPosts(barber) {
+    function getAppointments(barber) {
       var categoryString = barber || "";
       if (categoryString) {
         categoryString = "/barber/" + categoryString;
       }
-      $.get("/api/reservations" + categoryString, function (data) {
-        // console.log("Posts", data);
+      $.get("/api/appointments/" + categoryString, function (data) {
+        console.log("Posts", data);
         posts = data;
         if (!posts || !posts.length) {
           displayEmpty();
@@ -206,7 +201,7 @@ $(document).ready(function () {
     function deletePost(id) {
       $.ajax({
           method: "DELETE",
-          url: "/api/reservations/" + id
+          url: "/api/appointments/" + id
         })
         .then(function () {
           getPosts(postCategorySelect.val());
@@ -214,7 +209,7 @@ $(document).ready(function () {
     }
   
     // Getting the initial list of posts
-    getPosts();
+    getAppointments();
     
     // InitializeRows handles appending all of our constructed post HTML inside
     // reservationContainer
@@ -308,7 +303,7 @@ $(document).ready(function () {
         .parent()
         .parent()
         .data("post");
-      window.location.href = "/makeReservation?post_id=" + currentPost.id;
+      window.location.href = "/appointements?post_id=" + currentPost.id;
     }
   
     // This function displays a message when there are no posts
@@ -319,7 +314,7 @@ $(document).ready(function () {
         "text-align": "center",
         "margin-top": "50px"
       });
-      messageH2.html("No reservations yet for this barber, <a href='/makeReservation'>click here</a> to create a new reservation.");
+      messageH2.html("No reservations yet for this barber, <a href='/appointments'>click here</a> to create a new reservation.");
       reservationContainer.append(messageH2);
     }
   
@@ -336,5 +331,4 @@ $(document).ready(function () {
       });
     }
     pageReload();
-  
   });
