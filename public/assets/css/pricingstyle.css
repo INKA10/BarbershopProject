@@ -5,6 +5,10 @@
     color: #BC9321;
     display: block;
   }
+
+  img {
+    border-radius: 50px;
+  }
   
   /* line 45, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_section_title.scss */
   .section_title2 h3 {
@@ -148,11 +152,18 @@
     position: relative;
     z-index: 2;
   }
+
+  @media screen and (min-width: 1201px) {
+    .cutter_muster .single_master .thumb {
+      position: relative;
+      z-index: 2;
+    }
+  }
   
   /* line 18, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb img {
+  /* .cutter_muster .single_master .thumb img {
     width: 100%;
-  }
+  } */
   
   /* line 21, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
   /* .cutter_muster .single_master .thumb .social_link {
@@ -353,9 +364,9 @@
   }
   
   /* line 61, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
-  .service_area .single_service .service_inner .thumb img {
+  /* .service_area .single_service .service_inner .thumb img {
     width: 100%;
-  }
+  } */
   
   /* line 66, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
   .service_area .single_service .service_inner span {
@@ -377,7 +388,7 @@
   .service_area .white_bg_pos {
     position: relative;
     z-index: 2;
-    background: #fff;
+    background: white;
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
@@ -508,24 +519,24 @@
 
   
 /* line 57, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
-.service_area .single_service .service_inner .thumb {
+/* .service_area .single_service .service_inner .thumb {
     margin-right: 20px;
     width: 58px;
     height: 58px;
-  }
+  } */
   
   /* line 61, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
-  .service_area .single_service .service_inner .thumb img {
+  /* .service_area .single_service .service_inner .thumb img {
     width: 100%;
-  }
+  } */
   
   /* line 66, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
-  .service_area .single_service .service_inner span {
+  /* .service_area .single_service .service_inner span {
     color: black;
     font-size: 18px;
     font-weight: 900;
     font-family: "Playfair Display", serif;    
-  }
+  } */
   
   /* line 73, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
   .service_area .single_service p {
