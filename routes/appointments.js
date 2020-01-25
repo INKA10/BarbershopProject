@@ -1,7 +1,7 @@
 var express = require('express');
 var router  = express.Router();
-// var path = require("path");
-// var db = require("../models");
+var path = require("path");
+var db = require("../models");
 
 var appointments_controller = require('../controllers/appointments_controller');
 var isAuthenticated = require("../config/middleware/isAuthenticated");
@@ -14,11 +14,11 @@ router.get('/', isAuthenticated, appointments_controller.index);
 //     // res.sendFile(path.join(__dirname, "../public/makeReservation.html"));    // This is for non-handlebars version
 //   });
 
-router.post('/new', appointments_controller.makeAppointment);
+router.post('/new', isAuthenticated, appointments_controller.makeAppointment);
 
-router.get("/api/appointments/", appointments_controller.getAppointments);
+router.get('/api/appointments/', isAuthenticated, appointments_controller.getAppointments);
 
-router.get("/api/appointments/barber/:barberId", function (req, res) {
+router.get('/api/appointments/barber/:barberId', isAuthenticated, function (req, res) {
     var cool = new Date();
     var Sequelize = require("sequelize")
     const Op = Sequelize.Op
