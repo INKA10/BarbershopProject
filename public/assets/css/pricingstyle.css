@@ -51,31 +51,31 @@
   
   
   /* line 1, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster {
+  /* .cutter_muster {
     padding-top: 134px;
     padding-bottom: 130px;
-  }
+  } */
   
  
   
   /* line 12, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master {
+  /* .cutter_muster .single_master {
     margin-bottom: 20px;
-  }
+  } */
   
   /* line 14, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb {
+  /* .cutter_muster .single_master .thumb {
     position: relative;
     z-index: 2;
-  }
+  } */
   
   /* line 18, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb img {
+  /* .cutter_muster .single_master .thumb img {
     width: 100%;
-  }
+  } */
   
   /* line 21, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link {
+  /* .cutter_muster .single_master .thumb .social_link {
     position: absolute;
     left: 0;
     right: 0;
@@ -91,7 +91,7 @@
     -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
-  }
+  } */
   
   /* line 31, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
   .cutter_muster .single_master .thumb .social_link a {
@@ -102,24 +102,28 @@
   
   /* line 35, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
   .cutter_muster .single_master .thumb .social_link a:hover {
-    color: #BC9321;
+    color: darkred;
   }
   
   /* line 42, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
   .cutter_muster .single_master .master_name h3 {
-    font-size: 20px;
+    font-size: 40px;
     font-family: "Playfair Display", serif;
-    color: #4A3600;
-    font-weight: 400;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
     margin-top: 25px;
     margin-bottom: 0;
   }
   
   /* line 50, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
   .cutter_muster .single_master .master_name p {
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bolder;
     margin-bottom: 0;
-    color: #919191;
+    color: darkred;
+    background-color: white;
+    border-radius: 50px;
   }
   
   /* line 57, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
@@ -151,7 +155,7 @@
   }
   
   /* line 21, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link {
+  /* .cutter_muster .single_master .thumb .social_link {
     position: absolute;
     left: 0;
     right: 0;
@@ -167,36 +171,36 @@
     -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
-  }
+  } */
   
   /* line 31, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link a {
+  /* .cutter_muster .single_master .thumb .social_link a {
     margin: 0 10px;
     font-size: 20px;
     color: #fff;
-  }
+  } */
   
   /* line 35, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link a:hover {
+  /* .cutter_muster .single_master .thumb .social_link a:hover {
     color: #BC9321;
-  }
+  } */
   
   /* line 42, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .master_name h3 {
+  /* .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
     color: #4A3600;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
-  }
+  } */
   
   /* line 50, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .master_name p {
+  /* .cutter_muster .single_master .master_name p {
     font-size: 14px;
     margin-bottom: 0;
     color: #919191;
-  }
+  } */
   
   /* line 57, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
   .cutter_muster .single_master:hover .social_link {
@@ -210,7 +214,7 @@
   
   
   /* line 21, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link {
+  /* .cutter_muster .single_master .thumb .social_link {
     position: absolute;
     left: 0;
     right: 0;
@@ -226,70 +230,69 @@
     -o-transition: 0.3s;
     transition: 0.3s;
     opacity: 0;
-  }
+  } */
   
   /* line 31, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link a {
+  /* .cutter_muster .single_master .thumb .social_link a {
     margin: 0 10px;
     font-size: 20px;
     color: #fff;
-  }
+  } */
   
   /* line 35, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .thumb .social_link a:hover {
+  /* .cutter_muster .single_master .thumb .social_link a:hover {
     color: #BC9321;
-  }
+  } */
   
   /* line 42, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .master_name h3 {
+  /* .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
     color: #4A3600;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
-  }
+  } */
   
   /* line 50, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .master_name p {
+  /* .cutter_muster .single_master .master_name p {
     font-size: 14px;
     margin-bottom: 0;
     color: #919191;
-  }
+  } */
   
   /* line 57, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master:hover .social_link {
+  /* .cutter_muster .single_master:hover .social_link {
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px);
     opacity: 1;
-  }
+  } */
   
   
   
   /* line 42, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .master_name h3 {
+  /* .cutter_muster .single_master .master_name h3 {
     font-size: 20px;
     font-family: "Playfair Display", serif;
     color: #4A3600;
     font-weight: 400;
     margin-top: 25px;
     margin-bottom: 0;
-  }
+  } */
   
   /* line 50, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_cutter_master.scss */
-  .cutter_muster .single_master .master_name p {
+  /* .cutter_muster .single_master .master_name p {
     font-size: 14px;
     margin-bottom: 0;
     color: #919191;
-  }
+  } */
 
 /* line 1, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
 .service_area {
     position: relative;
     z-index: 0;
-    padding-top: 134px;
   }
   
 
@@ -298,7 +301,7 @@
   .service_area::after {
     position: absolute;
     content: "";
-    background-image: url(../img/banner/banner_service.png);
+    background-image: url(/assets/img/scissors.jpg);
     height: 650px;
     left: 0;
     right: 0;
@@ -380,6 +383,8 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
     margin-bottom: 14px;
     padding: 40px 20px 0 20px;
+    border-radius: 50px;
+    opacity: 0.8;
   }
   
   /* line 90, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
