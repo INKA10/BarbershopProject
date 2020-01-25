@@ -11,6 +11,7 @@
   padding: 0;
   background-image: url("carbon_fiber.png");
   background-repeat: repeat-y;
+  background-size: cover;
 }
 
 h1,
@@ -118,7 +119,7 @@ h6 {
 
 #feel {
   font-family: 'Alex Brush', cursive;
-  font-size: 125px;
+  font-size: 80px;
 }
 
 html {
@@ -255,6 +256,7 @@ a:focus {
 
 .intro {
   color: white;
+  text-align: center;
   background: url(https://c.pxhere.com/photos/23/bd/adults_barber_barbershop_business_city_cut_facial_expression_group-1568815.jpg!d) no-repeat bottom center scroll;
   opacity: .95;
   background-color: black;
