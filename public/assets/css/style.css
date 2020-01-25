@@ -1838,7 +1838,7 @@ h3 {
 /* line 66, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_service.scss */
 .service_area .single_service .service_inner span {
   color: black;
-  font-size: 18px;
+  font-size: 27px !important;
   font-weight: 900;
   font-family: "Playfair Display", serif;
 }

@@ -77,6 +77,21 @@ h6 {
       1px 1px 0 #000;
 }
 
+#forgot-pass-align {
+  background-color: white;
+  border-radius: 25px;
+  margin-left: 410px;
+  margin-right: 410px;
+  margin-bottom: 175px;
+  align-content: center;
+  text-align: center;
+}
+
+#lockGif {
+  width: 300px;
+  height: 200px;
+}
+
 #loginNow {
   text-decoration: underline;
 }
@@ -114,7 +129,10 @@ html {
 
 #barbers {
   color: white;
-  font-family: 'Alex Brush, cursive';
+  font-family: 'Alex Brush', cursive;
+  font-size: 120px;
+  font-weight: bolder;
+  padding-top: 25px;
 }
 
 ul {
@@ -231,6 +249,7 @@ a:focus {
 #registration-container {
   background-color: #F7F7F7;
   border-radius: 25px;
+
 }
 
 
@@ -406,7 +425,7 @@ footer p {
 
 #footerNote {
   padding: 20px;
-  margin-left: 15px;
+  text-align: center;
 }
 
 body {
